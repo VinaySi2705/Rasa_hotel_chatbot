@@ -1,0 +1,119 @@
+version: "3.1"
+
+stories:
+
+- story: check in
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: check_in
+  - action: utter_check_in
+
+- story: check out
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: check_out
+  - action: utter_check_out
+
+- story: cancel reservation
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: cancel_resr
+  - action: utter_cancel_resr
+
+- story: policy
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: can_policy
+  - action: utter_can_policy
+
+- story: Restaurant details
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: restaurant
+  - action: utter_restaurant
+
+- story: breakfast
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: breakfast
+  - action: utter_breakfast
+
+- story: break time
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: break_time
+  - action: utter_break_time
+
+- story: rest time
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: rest_time
+  - action: utter_rest_time
+
+- story: clean_room
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: clean
+  - action: utter_clean
+  - intent: clean_now
+  - action: utter_clean_now
+
+- story: book_simple_room
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: book_room
+  - action: utter_book_room
+  - intent: num_room
+  - action: validate_room_no
+  - action: utter_num_room
+  - intent: simple
+  - action: utter_simple
+
+- story: book_deluxe_room
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: book_room
+  - action: utter_book_room
+  - intent: num_room
+  - action: validate_room_no
+  - action: utter_num_room
+  - intent: deluxe
+  - action: utter_deluxe
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye

@@ -1,0 +1,205 @@
+version: "3.1"
+
+nlu:
+
+- intent: check_in
+  examples: |
+    - What are your check-in timings?
+    - check-in timings of your hotel is?
+    - can you tell me the check-in timing of your hotel?
+    - Is there any check-in timing of hotel?
+
+- intent: check_out
+  examples: |
+    - What are your check-out timings?
+    - check-out timings of your hotel is?
+    - can you tell me the check-out timing of your hotel?
+    - Is there any check-out timing of hotel?
+
+- intent: cancel_resr
+  examples: |
+    - How do I cancel a reservation?
+    - Procedure of cancel a hotel?
+    - Please cancel my reservation.
+    - Can You please cancel my reservation?
+
+- intent: can_policy
+  examples: |
+    - What is your cancellation policy?
+    - can you tell me about the cancellation policy of your hotel?
+    - cancellation policy of your hotel?
+    - Is there any cancellation plicy of your hotel?
+    - cancellation Policy of your hotel?
+
+- intent: restaurant
+  examples: |
+    - Does the hotel have a restaurant?
+    - Is there any restaurant in hotel?
+    - Any facilities of restaurant in hotel?
+    - any restaurant in hotel?
+    - did any restaurant in hotel?
+
+- intent: breakfast
+  examples: |
+    - Does the hotel offer breakfast?
+    - Any idea about breakfast offer by hotel?
+    - any complementary breakfast offer by hotel?
+    - Breakfast offer by hotel?
+    - breakfast provided by hotel?
+
+- intent: break_time
+  examples: |
+    - What are the breakfast timings?
+    - Is there any breakfast timing?
+    - can you tell me the breakfast timing of hotel?
+    - breakfast timing?
+    - what is the breakfast timing of the hotel?
+
+- intent: rest_time
+  examples: |
+    - What are the timings of your restaurant?
+    - Is there any timing of your restaurant?
+    - timing of your restaurant?
+    - can you tell me the restaurant timing of your hotel?
+
+- intent: clean_now
+  examples: |
+    - can you send someone right now for cleaning.
+    - send someone right now
+    - right now please
+    - i prefer right now
+    - please clean my room rightnow.
+
+- intent: clean
+  examples: |
+    - i want to clean my room
+    - can you send somebody to clean my room
+    - can you send room service to clean my room
+    - clean my room please
+    - send someone to clean my room.
+
+- intent: deluxe
+  examples: |
+    - i need deluxe room
+    - i want deluxe room
+    - deluxe rooms
+    - can i get the deluxe rooms
+    - i am looking for deluxe rooms
+
+- intent: simple
+  examples: |
+    - i need simple room
+    - i want simple room
+    - simple room
+    - i am looking for simple room
+    - can i get the simple rooms
+
+- intent: book_room
+  examples: |
+    - i want to book a room
+    - i need a room
+    - i am looking for a room
+    - is room empty
+    - book a room for a night.
+
+- intent: num_room
+  examples: |
+    - I need [2](number_of_room) rooms
+    - is [3](number_of_room) room available
+    - [4](number_of_room) rooms
+    - [5](number_of_room) rooms
+    - can i get the [3](number_of_room) rooms
+    - I want [3](number_of_room) rooms.
+    - [5](number_of_room)
+    - [4](number_of_room)
+    - [3](number_of_room)
+
+
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?

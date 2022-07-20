@@ -1,0 +1,27 @@
+5 Steps for Rasa chatbot Customiztion
+-------------------------------------
+
+
+STEP-1(nlu.yml)-
+---------
+We first start adding the intent or say add all possible way of saying any sentence.
+
+
+STEP-2(domain.yml)-
+-----------
+After adding the intent, describe the intent name in domain file and there response and also define the entities as well.We also have to declare the action name that we do in action.py file.
+
+
+STEP-3(action.py)-
+-----------
+Here we define the custom action or business logic that responded to user. Either it use API call or we use logic of code.
+
+
+STEP-4(stories.yml)-
+------------
+Lastly, define the intent and response flow of particular conversation in stories.yml file.
+
+
+STEP-5(credential.yml)-
+---------------
+We put secret key and access token to access the bot from other platform like slack, messenger,  etc.
